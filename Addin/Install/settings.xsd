@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+   <xs:element name="tpr">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="textures">
+               <xs:complexType>
+                  <xs:sequence>
+				  
+                     <xs:element name="squares" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                           <xs:sequence>
+                              <xs:element name="name">
+								  <xs:simpleType>
+									 <xs:restriction base="xs:string">
+									   <xs:minLength value="1"/>
+									 </xs:restriction>
+								  </xs:simpleType>
+							  </xs:element>
+                              <xs:element type="xs:byte" name="randomness" nillable="false" />
+                              <xs:element type="xs:byte" name="density" nillable="false" />
+                              <xs:element type="xs:byte" name="size" nillable="false" />
+                              <xs:element type="xs:byte" name="height" nillable="false" />
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+					 
+                     <xs:element name="cones" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                           <xs:sequence>
+                              <xs:element name="name">
+								  <xs:simpleType>
+									 <xs:restriction base="xs:string">
+									   <xs:minLength value="1"/>
+									 </xs:restriction>
+								  </xs:simpleType>
+							  </xs:element>
+                              <xs:element type="xs:byte" name="randomness" nillable="false" />
+                              <xs:element type="xs:byte" name="density" nillable="false" />
+                              <xs:element type="xs:byte" name="size" nillable="false" />
+                              <xs:element type="xs:byte" name="height" nillable="false" />
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+					 
+                     <xs:element name="spheres" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                           <xs:sequence>
+                              <xs:element name="name">
+								  <xs:simpleType>
+									 <xs:restriction base="xs:string">
+									   <xs:minLength value="1"/>
+									 </xs:restriction>
+								  </xs:simpleType>
+							  </xs:element>
+                              <xs:element type="xs:byte" name="randomness" nillable="false" />
+                              <xs:element type="xs:byte" name="density" nillable="false" />
+                              <xs:element type="xs:byte" name="size" nillable="false" />
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+					 
+                     <xs:element name="plough" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                           <xs:sequence>
+                              <xs:element name="name">
+								  <xs:simpleType>
+									 <xs:restriction base="xs:string">
+									   <xs:minLength value="1"/>
+									 </xs:restriction>
+								  </xs:simpleType>
+							  </xs:element>
+                              <xs:element type="xs:byte" name="angle" nillable="false" />
+                              <xs:element type="xs:byte" name="interval" nillable="false" />
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+					 
+                     <xs:element name="lines" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                           <xs:sequence>
+                              <xs:element name="name">
+								  <xs:simpleType>
+									 <xs:restriction base="xs:string">
+									   <xs:minLength value="1"/>
+									 </xs:restriction>
+								  </xs:simpleType>
+							  </xs:element>
+                              <xs:element type="xs:byte" name="width" nillable="false" />
+                              <xs:element type="xs:byte" name="height" nillable="false" />
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+					 
+                     <xs:element name="noise" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                           <xs:sequence>
+                              <xs:element name="name">
+								  <xs:simpleType>
+									 <xs:restriction base="xs:string">
+									   <xs:minLength value="1"/>
+									 </xs:restriction>
+								  </xs:simpleType>
+							  </xs:element>
+                              <xs:element type="xs:byte" name="minimum" nillable="false" />
+                              <xs:element type="xs:byte" name="maximum" nillable="false" />
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+					 
+                     <xs:element name="null" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                           <xs:sequence>
+                              <xs:element name="name">
+								  <xs:simpleType>
+									 <xs:restriction base="xs:string">
+									   <xs:minLength value="1"/>
+									 </xs:restriction>
+								  </xs:simpleType>
+							  </xs:element>
+                              <xs:element type="xs:byte" name="value" nillable="false" />
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+			
+            <xs:element name="landuses">
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:element name="landuse" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                           <xs:sequence>
+                              <xs:element type="xs:integer" name="z-index" />
+                           </xs:sequence>
+                           <xs:attribute type="xs:string" name="name" use="required" />
+                        </xs:complexType>
+                     </xs:element>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+			
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>
