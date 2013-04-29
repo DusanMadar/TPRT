@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<tpr>
+	<textures>
+			<squares>
+				<name>Small squares</name>
+				<randomness>5</randomness> 
+				<density>13</density> 
+				<size>20</size> 
+				<height>40</height> 
+			</squares>
+			
+		<cones>
+			<name>Random cones</name>
+			<randomness>2</randomness>
+			<density>13</density>
+			<size>20</size>
+			<height>40</height>
+		</cones>
+		
+		<spheres>
+			<name>Spheres medium</name>
+			<randomness>2</randomness>
+			<density>13</density>
+			<size>20</size>
+		</spheres>
+		
+		<plough>
+			<name>Plough field</name>
+			<angle>20</angle>
+			<interval>20</interval>
+		</plough>
+		
+		<lines>
+			<name>Road</name>
+			<width>20</width>
+			<height>-1</height>
+		</lines>	
+		
+		<noise>
+			<name>Meadow</name>
+			<minimum>1</minimum>
+			<maximum>10</maximum>
+		</noise>
+
+		<null>
+			<name>Lake</name>
+			<value>-1</value>
+		</null>
+	</textures>
+	
+	<landuses>
+		<landuse name="Main road">
+			<z-index>900</z-index>
+		</landuse>
+		
+		<landuse name="Minor road">
+			<z-index>850</z-index>
+		</landuse>
+		
+		<landuse name="River">
+			<z-index>800</z-index>
+		</landuse>
+
+		<landuse name="Buildings">
+			<z-index>750</z-index>
+		</landuse>
+
+		<landuse name="Urban area">
+			<z-index>700</z-index>
+		</landuse>
+		
+		<landuse name="Forest">
+			<z-index>600</z-index>
+		</landuse>
+		
+		<landuse name="Bush">
+			<z-index>550</z-index>
+		</landuse>
+	
+		<landuse name="Water bodies">
+			<z-index>500</z-index>
+		</landuse>
+
+		<landuse name="Park">
+			<z-index>450</z-index>
+		</landuse>
+		
+		<landuse name="Field">
+			<z-index>400</z-index>
+		</landuse>
+		
+		<landuse name="Meadow">
+			<z-index>350</z-index>
+		</landuse>
+	</landuses>
+</tpr>
