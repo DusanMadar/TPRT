@@ -9,6 +9,7 @@ programming language, based on ArcGIS site package ArcPy. TPRT also uses a XML
 configuration file and a XSD schema to validate it. GUI of the tool is implemented
 using wxPython framework. The tool can be used from ArcGIS (ArcMap) interface as an
 Add-in or outside of ArcGIS as a standalone script (ArcPy is still necessary though).
+TPRT result is a georeferenced ratser in *.TIFF | *.JPEG | *.PNG file format.
 
 TPR tool is inspired by Jeffery Nighberts (father of the Textured Painted Relief idea)
 work and projects. You can find some of the original projects on the following websites: 
