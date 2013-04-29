@@ -1,0 +1,51 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>Textured Painted Relief Tool</Name>
+	<AddInID>{c85f28b3-e640-4c80-9a56-d1874a0128db}</AddInID>
+	<Description>Creates a Textured Painted Relief based on a XML configuration file and user inputs.</Description>
+	<Version>1.0</Version>
+	<Image>Install\_tpr.png</Image>
+	<Author>dm</Author>
+	<Company></Company>
+	<Date>10/30/2012</Date>
+	<Targets>
+		<Target name="Desktop" version="10.1" />
+	</Targets>
+	<AddIn language="PYTHON" library="TexturedPaintedRelief_addin.py" namespace="TexturedPaintedRelief_addin">
+		<ArcMap>
+			<Commands>
+				<Button
+					caption="Textured Painted Relief Tool"
+					category="TexturedPaintedRelief"
+					class="TexturedPaintedRelief"
+					id="TexturedPaintedRelief_addin.wxpybutton"
+					image="Install\_tpr.png"
+					message="Opens wxPython Dialog for Textured Painted Relief Tool.">
+					<Help heading="Textured Painted Relief Tool">Opens wxPython Dialog for Textured Painted Relief Tool</Help>
+				</Button>
+			</Commands>
+			<Extensions>
+				<Extension
+					autoLoad="true"
+					category="Textured Painted Relief Tool"
+					class="TexturedPaintedReliefExt"
+					description="Extension allowing the wxPythonv Textured Painted Relief Tool dialog to open properly."
+					id="TexturedPaintedRelief_addin.wxpyextension"
+					name="TexturedPaintedRelief Ext"
+					productName="TexturedPaintedRelief Ext"
+					showInExtensionDialog="true" />
+			</Extensions>
+			<Toolbars>
+				<Toolbar
+					caption="Textured Painted Relief Tool"
+					category="TexturedPaintedRelief"
+					id="TexturedPaintedRelief_addin.wxpytoolbar"
+					showInitially="true">
+					<Items>
+						<Button refID="TexturedPaintedRelief_addin.wxpybutton" />
+					</Items>
+				</Toolbar>
+			</Toolbars>
+			<Menus></Menus>
+		</ArcMap>
+	</AddIn>
+</ESRI.Configuration>
